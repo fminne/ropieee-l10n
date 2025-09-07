@@ -1,0 +1,31 @@
+{
+    "TOPCARD": {
+        "WELCOME": "Welkom bij {{.constants.GLOBAL_PROD_NAME}}, draaiend op [{{.config.system_hostname.value}}]",
+        "BUTTON_LOGOUT": "UITLOGGEN"
+    },
+    "MENU": {
+        "SYSTEM": "Systeem",
+        "AUDIO": "Geluid",
+        "NETWORK": "Netwerk",
+        "DISPLAY": "Scherm",
+        "REMOTE": "Afstandsbediening",
+        "ADVANCED": "Geavanceerd",
+        "SERVICES": "Services",
+        "INFORMATION": "Informatie",
+        "DEVICES": "Apparaten"
+    },
+    "GENERAL": {
+        "BUTTON_APPLY": "Toepassen",
+        "BUTTON_RESET": "Herstellen"
+    },
+    "SYSTEM": {
+        "INTRO_TEXT": "Deze sectie bevat de basis instellingen voor {{.constants.GLOBAL_PROD_NAME}} die vereist zijn om als eindpunt te kunnen functioneren.",
+        "DEVICE_NAME": "Apparaat Naam",
+        "HELP_DEVICE_NAME": "The name that identifies (also known as 'hostname') the {{.constants.GLOBAL_PROD_NAME}} device. Very useful if you have more than 1 {{.constants.GLOBAL_PROD_NAME}} device in your network.",
+        "TIMEZONE": "Tijdzone",
+        "HELP_TIMEZONE": "Selecteer de corresponderende tijdzone van waar de {{.constants.GLOBAL_PROD_NAME}} is gelegen."
+    },
+    "AUDIO": {
+
+    }
+}
