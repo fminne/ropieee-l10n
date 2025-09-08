@@ -65,7 +65,33 @@ check_for_missing_keys()
             _debug "checking toplevel key $k, sublevel key $l"
 	    if [ $( cat $f | jq -r ".${k} | keys_unsorted[]" | grep -c $l ) -eq 0 ]
 	    then
-               echo "WARNING: $k, sublevel key $l not found in ${bold}$( basename $f )${normal}"
+               echo "WARNING: key $k, sublevel key $l not found in ${bold}$( basename $f )${normal}"
+	    fi
+	 done
+      fi
+   done
+
+   # let's do a reverse check: does the translation file has keys
+   # that don't exist at all (in the master file)
+
+   cat $f | jq -r 'keys_unsorted[]' |
+   while read k
+   do
+      _debug "reverse checking toplevel key $k"
+
+      # does this toplevel key even exist?
+      if [ $( cat $MASTER | jq -r 'keys_unsorted[]' | grep -c $k ) -eq 0 ]
+      then
+         echo "ERROR: ${bold}$( basename $f )${normal}: toplevel $k not found in MASTER"
+      else
+         # the toplevel key exists, now let's check the subkeys
+	 cat $f | jq -r ".${k} | keys_unsorted[]" |
+         while read l
+	 do
+            _debug "reverse checking toplevel key $k, sublevel key $l"
+	    if [ $( cat $MASTER | jq -r ".${k} | keys_unsorted[]" | grep -c $l ) -eq 0 ]
+	    then
+               echo "ERROR: ${bold}$( basename $f )${normal}: key $k, sublevel key $l not found in MASTER"
 	    fi
 	 done
       fi
