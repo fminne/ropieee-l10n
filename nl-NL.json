@@ -26,6 +26,18 @@
         "HELP_TIMEZONE": "Selecteer de corresponderende tijdzone van waar de {{.constants.GLOBAL_PROD_NAME}} is gelegen."
     },
     "AUDIO": {
-
+        "INTRO_TEXT": "Deze sectie bevat de audio instellingen voor{{.constants.GLOBAL_PROD_NAME}} die vereist zijn om als eindpunt te kunnen functioneren.",
+        "HAT": "Audio HAT",
+        "HELP_HAT": "Selecteer de audio HAT die door {{.constants.GLOBAL_PROD_NAME}} gebruikt moet worden.",
+        "DAPM": "Dynamic Audio Power Mgt",
+        "HELP_DAPM": "Zet Dynamic Audio Power Management (ALSA DAPM) aan. Dit zet (op sommige HAT's) de uitgang uit na een bepaalde tijd als er geen activiteit is.",
+        "USB": "Audio USB",
+        "HELP_USB": "Selecteer om USB audio te ondersteunen. Dit kan ook in parallel met een audio HAT.",
+        "USB_FORCE_VOLUME": "USB Forceer Volume",
+        "HELP_USB_FORCE_VOLUME": "Selecteer om volume te forceren tijdens het opstarten.",
+        "USB_FORCE_VOLUME_LEVEL": "Forceer Volume Nivo",
+        "HELP_USB_FORCE_VOLUME_LEVEL": "USB volume nivo (%) tijdens opstarten.",
+        "USB_AUTO_SUSPEND": "USB Automatisch Uitschakelen",
+        "HELP_USB_AUTO_SUSPEND": "Selecteer USB automatisch uitschakelen. Let op: niet alle DAC's ondersteunen dit!"
     }
 }
