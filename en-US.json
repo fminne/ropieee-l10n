@@ -22,6 +22,8 @@
         "INTRO_TEXT": "This section contains the basic settings for {{.constants.GLOBAL_PROD_NAME}} that are required for it to function as an endpoint.",
         "DEVICE_NAME": "Device Name",
         "HELP_DEVICE_NAME": "The name that identifies (also known as 'hostname') the {{.constants.GLOBAL_PROD_NAME}} device. Very useful if you have more than 1 {{.constants.GLOBAL_PROD_NAME}} device in your network.",
+        "LANGUAGE": "Language",
+        "HELP_LANGUAGE": "Select the language of this web interface.",
         "TIMEZONE": "Timezone",
         "HELP_TIMEZONE": "Select the corresponding timezone in which the {{.constants.GLOBAL_PROD_NAME}} is located."
     },
