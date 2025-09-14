@@ -101,6 +101,13 @@ check_for_missing_keys()
 ########################################################################################################################
 ########################################################################################################################
 
+# do we have jq?
+type jq >/dev/null 2>&1
+if [ $? -ne 0 ]
+then
+   _abort "can't find 'jq' executable"
+fi
+
 # iterate over all files (except master)
 for file in $( ls ./*.json | grep -v $MASTER )
 do
