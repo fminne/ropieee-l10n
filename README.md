@@ -12,4 +12,10 @@ RoPieee is an image for the Raspberry Pi devices (3, 4 and 5 family) that is cap
 
 RoPieee's web interface supports multiple languages. This project contains the JSON files with 'all' text elements. The english translation (en-US) acts like 'master' file: it is both the default language and acts as fallback when a specific translation cannot be found. 
 
-## TODO: add translation
+## Change translations
+
+If you think that some existing translations can be improved, feel free to make a PR.
+
+## Add translation
+
+Adding a translation can be done by opening a PR and introducing a new language file. That's the simple explanation 😅 Obviously more needs to happen: the language files are shipped with the binary, so only an update to RoPieee itself can 'enable' the new language. Furthermore it needs be correct and complete before the PR is (potentially) accepted. There's a simple shell script, called check.sh, which you can run (on a Linux system) that checks the validity of the file and if it is complete.
