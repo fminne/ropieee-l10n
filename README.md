@@ -18,4 +18,6 @@ If you think that some existing translations can be improved, feel free to make 
 
 ## Add translation
 
-Adding a translation can be done by opening a PR and introducing a new language file. That's the simple explanation 😅 Obviously more needs to happen: the language files are shipped with the binary, so only an update to RoPieee itself can 'enable' the new language. Furthermore it needs be correct and complete before the PR is (potentially) accepted. There's a simple shell script, called `check.sh`, which you can run (on a Linux system) that checks the validity of the file and if it is complete.
+Adding a translation can be done by opening a PR and introducing a new language file. That's the simple explanation 😅 
+
+Obviously more needs to happen: the language files are shipped with the binary, so only an update to RoPieee itself can 'enable' the new language. Furthermore it needs be correct and complete before the PR is (potentially) accepted. There's a simple shell script, called `check.sh`, which you can run (on a Linux system) that checks the validity of the file and if it is complete.
