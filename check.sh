@@ -1,8 +1,17 @@
 #!/bin/bash
 
+tmpdir=$( mktemp -d /tmp/check_lang.XXXXX )
+
 DEBUG=0
 MASTER="en-US.json"
 WARNING=0
+TODO=0
+
+if [ "$1" = "todo" ]
+then
+   echo "create TODO file"
+   TODO=1
+fi
 
 bold=$(tput bold)
 normal=$(tput sgr0)
@@ -26,6 +35,17 @@ _warning()
    echo "WARNING: $@"
    (( WARNING = WARNING + 1 ))
    _debug "warning count: $WARNING"
+}
+
+_todo()
+{
+   test $TODO -eq 0 && return
+
+   local file=$1
+   local key=$2
+   local msg=$3
+
+   echo "| $key | $msg |" >> $todo_file
 }
 
 is_valid_json_file()
@@ -64,6 +84,7 @@ check_for_missing_keys()
       if [ $( cat $f | jq -r 'keys_unsorted[]' | grep -c $k ) -eq 0 ]
       then
          _warning "toplevel key $k not found in ${bold}$( basename $f )${normal}"
+	 _todo "$( basename $f)" $k "toplevel key missing"
       else
          # the toplevel key exists, now let's check the subkeys
          while read l
@@ -72,6 +93,7 @@ check_for_missing_keys()
 	    if [ $( cat $f | jq -r ".${k} | keys_unsorted[]" | grep -c $l ) -eq 0 ]
 	    then
                _warning "key $k, sublevel key $l not found in ${bold}$( basename $f )${normal}"
+               _todo "$( basename $f)" $k "sublevel key $l missing"
 	    fi
          done < <( cat en-US.json| jq -r ".${k} | keys_unsorted[]" )
       fi
@@ -114,11 +136,31 @@ then
    _abort "can't find 'jq' executable"
 fi
 
+# do we need to create a 'todo' file?
+if [ $TODO -eq 1 ]
+then
+   todo_file=$tmpdir/todo.md
+   echo "## TODO missing (sub)keys"            >> $todo_file
+   echo                                        >> $todo_file
+   echo "The following (sub)keys are missing:" >> $todo_file
+fi
+
 # iterate over all files (except master)
 for file in $( ls ./*.json | grep -v $MASTER )
 do
    echo "found language file: ${bold}$( basename $file )${normal}"
+   if [ $TODO -eq 1 ]
+   then
+      echo                                        >> $todo_file
+      echo "| language | $( basename $file ) |"   >> $todo_file
+      echo "| -------- | ------------------- |"   >> $todo_file
+   fi
+
    check_for_missing_keys $file
+   if [ $TODO -eq 1 ]
+   then
+      echo >> $todo_file
+   fi
 done
 
 _debug "warning counts: $WARNING"
@@ -130,5 +172,15 @@ else
    echo
    echo "Please fix the warnings..."
 fi
+
+if [ $TODO -eq 1 ]
+then
+   echo
+   echo "TODO file created/updated!"
+   _debug "tmp TODO file: $todo_file"
+   cp $todo_file ./TODO.md
+fi
+
+rm -rf $tmpdir
 
 exit 0
