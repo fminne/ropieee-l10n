@@ -2,6 +2,7 @@
 
 DEBUG=0
 MASTER="en-US.json"
+WARNING=0
 
 bold=$(tput bold)
 normal=$(tput sgr0)
@@ -18,6 +19,13 @@ _abort()
 {
    echo "ERROR: $@"
    exit 1
+}
+
+_warning()
+{
+   echo "WARNING: $@"
+   (( WARNING = WARNING + 1 ))
+   _debug "warning count: $WARNING"
 }
 
 is_valid_json_file()
@@ -48,7 +56,6 @@ check_for_missing_keys()
    fi
 
    # iterate over the toplevel keys
-   cat $MASTER | jq -r 'keys_unsorted[]' |
    while read k
    do
       _debug "checking toplevel key $k"
@@ -56,20 +63,19 @@ check_for_missing_keys()
       # does this toplevel key even exist?
       if [ $( cat $f | jq -r 'keys_unsorted[]' | grep -c $k ) -eq 0 ]
       then
-         echo "WARNING: toplevel key $k not found in ${bold}$( basename $f )${normal}"
+         _warning "toplevel key $k not found in ${bold}$( basename $f )${normal}"
       else
          # the toplevel key exists, now let's check the subkeys
-	 cat en-US.json| jq -r ".${k} | keys_unsorted[]" |
          while read l
 	 do
             _debug "checking toplevel key $k, sublevel key $l"
 	    if [ $( cat $f | jq -r ".${k} | keys_unsorted[]" | grep -c $l ) -eq 0 ]
 	    then
-               echo "WARNING: key $k, sublevel key $l not found in ${bold}$( basename $f )${normal}"
+               _warning "key $k, sublevel key $l not found in ${bold}$( basename $f )${normal}"
 	    fi
-	 done
+         done < <( cat en-US.json| jq -r ".${k} | keys_unsorted[]" )
       fi
-   done
+   done < <( cat $MASTER | jq -r 'keys_unsorted[]' )
 
    # let's do a reverse check: does the translation file has keys
    # that don't exist at all (in the master file)
@@ -114,5 +120,15 @@ do
    echo "found language file: ${bold}$( basename $file )${normal}"
    check_for_missing_keys $file
 done
+
+_debug "warning counts: $WARNING"
+if [ $WARNING -eq 0 ]
+then
+   echo
+   echo "Everything looks OK!"
+else
+   echo
+   echo "Please fix the warnings..."
+fi
 
 exit 0
