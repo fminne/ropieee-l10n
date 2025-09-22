@@ -145,5 +145,10 @@
         "TABLE_HDR_UPTIME": "Czas pracy",
         "TABLE_HDR_VERSION": "Wersja oprogramowania",
         "TABLE_HOST_ME": "JA"
+    },
+    "DOWN": {
+        "LINE_1": "Twoje urządzenie uruchamia się ponownie. Zanim strona internetowa będzie ponownie dostępna, może minąć około minuty.",
+        "LINE_2": "Strona zostanie automatycznie odświeżona, gdy urządzenie będzie ponownie dostępne.",
+        "BUTTON_RELOAD": "Odśwież"
     }
 }
