@@ -65,7 +65,7 @@
         "INTRO_TEXT": "This section contains the settings for the Raspberry Pi Touchscreen.",
         "ORIENTATION": "Orientation",
         "HELP_ORIENTATION": "If the touchscreen is upside-down then rotate it with this option.",
-        "ROON_DEFAULT_ZONE": "Roon Default Zone",
+        "ROON_DEFAULT_ZONE": "Default Roon Zone",
         "HELP_ROON_DEFAULT_ZONE": "Which Roon Zone should the display show, by default. Make sure you type it *exactly* as known in Roon. You can change the zone also directly from the screen.",
         "SCROLL_TITLES": "Scroll Long Titles",
         "HELP_SCROLL_TITLES": "Select to enable scrolling for long titles.",
