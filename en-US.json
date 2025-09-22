@@ -145,5 +145,10 @@
         "TABLE_HDR_UPTIME": "Uptime",
         "TABLE_HDR_VERSION": "Version",
         "TABLE_HOST_ME": "ME"
+    },
+    "DOWN": {
+        "LINE_1": "Your device is rebooting. This takes about a minute before the webpage is available again.",
+        "LINE_2": "This page will automatically refresh when the device is up again.",
+        "BUTTON_RELOAD": "Reload"
     }
 }
