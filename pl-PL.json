@@ -128,14 +128,14 @@
         "VIEW_RELEASE_NOTES": "Wersja Wydania",
         "SOFTWARE_VERSION": "Wersja Oprogramowania",
         "KERNEL_VERSION": "Wersja Kernela",
-        "BOARD_TEMP": "Temperetura Urządzenia",
+        "BOARD_TEMP": "Temperatura Urządzenia",
         "UPTIME": "Czas Pracy",
         "BOARD_SERIAL": "Numer Seryjny Płyty Głównej",
         "BOARD_UUID": "Numer UUID",
         "BOARD_TYPE": "Model Urządzenia",
         "BOOTLOADER_VERSION": "Wersja Bootloadera",
-        "MEM_SIZE": "Wielkość Pamięci RAM",
-        "DISK_SIZE": "Wielkość Dysku/Karty SD"
+        "MEM_SIZE": "Pamięci RAM",
+        "DISK_SIZE": "Pojemność Dysku/Karty SD"
     },
     "DEVICES": {
         "INTRO_TEXT": "Sekcja pokazuje wszystkie wykryte urządzenia {{.constants.GLOBAL_PROD_NAME}} w twojej sieci.",
