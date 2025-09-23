@@ -28,7 +28,7 @@
         "HELP_TIMEZONE": "Selecteer de corresponderende tijdzone van waar de {{.constants.GLOBAL_PROD_NAME}} is gelegen."
     },
     "AUDIO": {
-        "INTRO_TEXT": "Dit gedeelte bevat de audio instellingen voor{{.constants.GLOBAL_PROD_NAME}} die vereist zijn om als eindpunt te kunnen functioneren.",
+        "INTRO_TEXT": "Dit gedeelte bevat de audio instellingen voor {{.constants.GLOBAL_PROD_NAME}} die vereist zijn om als eindpunt te kunnen functioneren.",
         "HAT": "Audio HAT",
         "HELP_HAT": "Selecteer de audio HAT die door {{.constants.GLOBAL_PROD_NAME}} gebruikt moet worden.",
         "DAPM": "Dynamic Audio Power Mgt",
