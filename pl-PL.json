@@ -27,7 +27,7 @@
         "TIMEZONE": "Strefa Czasowa",
         "HELP_TIMEZONE": "Wybierz właściwą strefę czasową gdzie będziesz używać swojego {{.constants.GLOBAL_PROD_NAME}}."
     },
-    "Dźwięk": {
+    "AUDIO": {
         "INTRO_TEXT": "Sekcja zawiera podstawowe ustawienia dźwięku {{.constants.GLOBAL_PROD_NAME}}, które są niezbędne do prawidłowego funkcjowania urządzenia.",
         "HAT": "Nakładka HAT",
         "HELP_HAT": "Wybierz swoją nakładkę HAT, którą {{.constants.GLOBAL_PROD_NAME}} będziesz używać.",
@@ -42,7 +42,7 @@
         "USB_AUTO_SUSPEND": "Automatyczne Uśpienie USB",
         "HELP_USB_AUTO_SUSPEND": "Włącz automatyczne uśpienie USB. Nie każdy DAC obsługuje tę funkcję. Bądź ostrożny używając tę funkcję!"
     },
-    "SIEĆ": {
+    "NETWORK": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia sieciowe dla {{.constants.GLOBAL_PROD_NAME}}.",
         "SWITCH_WIRELESS": "Włącz WiFi",
         "HELP_SWITCH_WIRELESS": "Wybierz, aby włączyć WiFi.",
@@ -61,7 +61,7 @@
         "WIRELESS_PASSWORD": "Hasło",
         "HELP_WIRELESS_PASSWORD": "Hasło (WPA-PSK/WPA2-PSK) sieci WiFi z którą chcesz się połączyć."
     },
-    "WYŚWIETLACZ": {
+    "DISPLAY": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia wyświetlacza dotykowego Raspberry Pi.",
         "ORIENTATION": "Orientacja",
         "HELP_ORIENTATION": "Jeśli ekran dotykowy jest odwrócony do góry nogami, obróć go za pomocą tej opcji.",
@@ -84,7 +84,7 @@
         "CLOCK_24HR": "Zegar 24-godzinny",
         "HELP_CLOCK_24HR": "Pokaż Zegar 24-godzinny."
     },
-    "PILOT": {
+    "REMOTE": {
         "INTRO_TEXT": "W tej sekcji znajdują się ustawienia pilota zdalnego sterowania. Model pilota zostanie wykryty automatycznie.",
         "TYPE": "Model Pilota",
         "ROON_ZONE": "Strefa ROON",
@@ -93,7 +93,7 @@
         "HELP_FOLLOW_ZONE": "Wybierz opcję, aby ustawić taką samą strefę jak w wyświetlaczu.",
         "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w ROON!"
     },
-    "ZAAWANSOWANE": {
+    "DISPLAY": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia zaawansowane. Zmieniaj je tylko wtedy, gdy dokładnie wiesz, co robisz!",
         "UPDATE_CHANNEL": "Kanał Aktualizacji",
         "HELP_UPDATE_CHANNEL": "Kanał, którego {{.constants.GLOBAL_PROD_NAME}} używa do aktualizacji. Domyślnym kanałem jest 'Stable'.",
