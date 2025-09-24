@@ -82,18 +82,18 @@
         "CUSTOM_CLOCK_COLOR": "Dostosuj Kolor Zegara",
         "HELP_CUSTOM_CLOCK_COLOR": "Dostosuj kolor zegara (zdefiniuj w wartościach HEX).",
         "CLOCK_24HR": "Zegar 24-godzinny",
-        "HELP_CLOCK_24HR": "Pokaż Zegar 24-godzinny."
+        "HELP_CLOCK_24HR": "Pokaż Zegar 24-godzinny.
+        "FOLLOW_ZONE": "Strefa Wyświetlacza",
+        "HELP_FOLLOW_ZONE": "Wybierz opcję, aby ustawić taką samą strefę jak w wyświetlaczu.",
+        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w ROON!"
     },
     "REMOTE": {
         "INTRO_TEXT": "W tej sekcji znajdują się ustawienia pilota zdalnego sterowania. Model pilota zostanie wykryty automatycznie.",
         "TYPE": "Model Pilota",
         "ROON_ZONE": "Strefa ROON",
-        "HELP_ROON_ZONE": "Którą strefą Roon powinien sterować za pomocą pilota. Upewnij się, że wpisałeś dokładnie taką, jak w ustawieniach ROON.",
-        "FOLLOW_ZONE": "Strefa Wyświetlacza",
-        "HELP_FOLLOW_ZONE": "Wybierz opcję, aby ustawić taką samą strefę jak w wyświetlaczu.",
-        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w ROON!"
+        "HELP_ROON_ZONE": "Którą strefą Roon powinien sterować za pomocą pilota. Upewnij się, że wpisałeś dokładnie taką, jak w ustawieniach ROON."
     },
-    "DISPLAY": {
+    "ADVANCED": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia zaawansowane. Zmieniaj je tylko wtedy, gdy dokładnie wiesz, co robisz!",
         "UPDATE_CHANNEL": "Kanał Aktualizacji",
         "HELP_UPDATE_CHANNEL": "Kanał, którego {{.constants.GLOBAL_PROD_NAME}} używa do aktualizacji. Domyślnym kanałem jest kanał 'Stable'.",
