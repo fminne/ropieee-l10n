@@ -85,13 +85,13 @@
         "HELP_CLOCK_24HR": "Pokaż Zegar 24-godzinny."
         "FOLLOW_ZONE": "Strefa Wyświetlacza",
         "HELP_FOLLOW_ZONE": "Wybierz opcję, aby ustawić taką samą strefę jak w wyświetlaczu.",
-        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w ROON!"
-    },
+            },
     "REMOTE": {
         "INTRO_TEXT": "W tej sekcji znajdują się ustawienia pilota zdalnego sterowania. Model pilota zostanie wykryty automatycznie.",
         "TYPE": "Model Pilota",
         "ROON_ZONE": "Strefa ROON",
         "HELP_ROON_ZONE": "Którą strefą Roon powinien sterować za pomocą pilota. Upewnij się, że wpisałeś dokładnie taką, jak w ustawieniach ROON."
+        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w ROON!"
     },
     "ADVANCED": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia zaawansowane. Zmieniaj je tylko wtedy, gdy dokładnie wiesz, co robisz!",
