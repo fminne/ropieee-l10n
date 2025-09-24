@@ -65,8 +65,8 @@
         "INTRO_TEXT": "Sekcja zawiera ustawienia dotykowego wyświetlacza Raspberry Pi.",
         "ORIENTATION": "Orientacja",
         "HELP_ORIENTATION": "Jeśli ekran dotykowy jest odwrócony do góry nogami, obróć go za pomocą tej funkcji.",
-        "ROON_DEFAULT_ZONE": "Domyślna Strefa ROON",
-        "HELP_ROON_DEFAULT_ZONE": "Którą strefę Roon powinien domyślnie pokazywać wyświetlacz. Upewnij się, że wpisałeś właściwą strefę jak w ustawieniach ROON. Strefę możesz zmienić także bezpośrednio z ekranu.",
+        "ROON_DEFAULT_ZONE": "Domyślna Strefa Roon",
+        "HELP_ROON_DEFAULT_ZONE": "Którą strefę Roon powinien domyślnie pokazywać wyświetlacz. Upewnij się, że wpisałeś właściwą strefę jak w ustawieniach Roon. Strefę możesz zmienić także bezpośrednio z ekranu.",
         "SCROLL_TITLES": "Przewiń Długie Tytuły",
         "HELP_SCROLL_TITLES": "Włącz przewijanie długich tytułów utworów.",
         "HIDE_OPTIONS": "Ukryj Przycisk Opcji",
@@ -87,11 +87,11 @@
     "REMOTE": {
         "INTRO_TEXT": "W tej sekcji znajdują się ustawienia pilota zdalnego sterowania. Model pilota zostanie wykryty automatycznie.",
         "TYPE": "Model Pilota",
-        "ROON_ZONE": "Strefa ROON",
-        "HELP_ROON_ZONE": "Którą strefą Roon powinien sterować za pomocą pilota. Upewnij się, że wpisałeś dokładnie taką, jak w ustawieniach ROON.",
+        "ROON_ZONE": "Strefa Roon",
+        "HELP_ROON_ZONE": "Którą strefą Roon powinien sterować za pomocą pilota. Upewnij się, że wpisałeś dokładnie taką, jak w ustawieniach Roon.",
         "FOLLOW_ZONE": "Strefa Wyświetlacza",
         "HELP_FOLLOW_ZONE": "Wybierz opcję, aby ustawić taką samą strefę jak w wyświetlaczu.",
-        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w ROON!"
+        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w Roon!"
     },
     "ADVANCED": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia zaawansowane. Zmieniaj je tylko wtedy, gdy dokładnie wiesz, co robisz!",
@@ -115,12 +115,12 @@
         "HELP_WOL_MACADDR": "Adres MAC, na który kierowany jest WoL.",
         "WOL_MACADDR_PLACEHOLDER": "Podaj prawidłowy adres MAC, np. dc:a6:32:ae:8e:7f",
         "ALARM_CLOCK": "Budzik",
-        "HELP_ALARM_CLOCK": "Roszerzenie TheAppgineer's Alarm Clock Extension umożliwia ustawienia alarmu dla danej strefy ROON.",
+        "HELP_ALARM_CLOCK": "Roszerzenie TheAppgineer's Alarm Clock Extension umożliwia ustawienia alarmu dla danej strefy Roon.",
         "TOUCHSCREEN_TYPE": "Budzik",
         "HELP_TOUCHSCREEN_TYPE": "Który typ ekranu dotykowego jest podłączony.",
         "BUTTON_SHUTDOWN": "Wyłącz",
         "BUTTON_REBOOT": "Zrestartuj",
-        "BUTTON_ROONBRIDGE": "Przeinstaluj Mostek ROON",
+        "BUTTON_ROONBRIDGE": "Przeinstaluj Mostek Roon",
         "BUTTON_FEEDBACK": "Wyślij Feedback"
     },
     "INFO": {
