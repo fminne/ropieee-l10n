@@ -30,7 +30,7 @@
     "AUDIO": {
         "INTRO_TEXT": "Sekcja zawiera podstawowe ustawienia dźwięku {{.constants.GLOBAL_PROD_NAME}}, które są niezbędne do prawidłowego funkcjowania urządzenia.",
         "HAT": "Nakładka HAT",
-        "HELP_HAT": "Wybierz swoją nakładkę HAT, którą {{.constants.GLOBAL_PROD_NAME}} będziesz używać.",
+        "HELP_HAT": "Wybierz swoją nakładkę HAT, którą {{.constants.GLOBAL_PROD_NAME}} będzie używać.",
         "DAPM": "Dynamiczne Zarządzanie Energią",
         "HELP_DAPM": "Włącz dynamiczne zarządzanie energią (ALSA DAPM). Opcja wyłącza wyjście audio niektórych nakładek HAT (po przekroczeniu limitu czasu), gdy nakładka HAT nie jest używana.",
         "USB": "Audio USB",
@@ -38,9 +38,9 @@
         "USB_FORCE_VOLUME": "Wymuś Głośność USB",
         "HELP_USB_FORCE_VOLUME": "Wymuś poziom głośności wyjścia USB.",
         "USB_FORCE_VOLUME_LEVEL": "Poziom Głośności USB",
-        "HELP_USB_FORCE_VOLUME_LEVEL": "Poziom głośności USB (%) podczas startu urządzenia.",
+        "HELP_USB_FORCE_VOLUME_LEVEL": "Poziom głośności wyjścia USB (%) podczas startu urządzenia.",
         "USB_AUTO_SUSPEND": "Automatyczne Uśpienie USB",
-        "HELP_USB_AUTO_SUSPEND": "Włącz automatyczne uśpienie USB. Nie każdy DAC obsługuje tę funkcję. Bądź ostrożny używając tę funkcję!"
+        "HELP_USB_AUTO_SUSPEND": "Włącz automatyczne uśpienie wyjścia USB. Nie każdy DAC obsługuje tę funkcję. Bądź ostrożny używając tę funkcję!"
     },
     "NETWORK": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia sieciowe dla {{.constants.GLOBAL_PROD_NAME}}.",
@@ -62,9 +62,9 @@
         "HELP_WIRELESS_PASSWORD": "Hasło (WPA-PSK/WPA2-PSK) sieci WiFi z którą chcesz się połączyć."
     },
     "DISPLAY": {
-        "INTRO_TEXT": "Sekcja zawiera ustawienia wyświetlacza dotykowego Raspberry Pi.",
+        "INTRO_TEXT": "Sekcja zawiera ustawienia dotykowego wyświetlacza Raspberry Pi.",
         "ORIENTATION": "Orientacja",
-        "HELP_ORIENTATION": "Jeśli ekran dotykowy jest odwrócony do góry nogami, obróć go za pomocą tej opcji.",
+        "HELP_ORIENTATION": "Jeśli ekran dotykowy jest odwrócony do góry nogami, obróć go za pomocą tej funkcji.",
         "ROON_DEFAULT_ZONE": "Domyślna Strefa ROON",
         "HELP_ROON_DEFAULT_ZONE": "Którą strefę Roon powinien domyślnie pokazywać wyświetlacz. Upewnij się, że wpisałeś właściwą strefę jak w ustawieniach ROON. Strefę możesz zmienić także bezpośrednio z ekranu.",
         "SCROLL_TITLES": "Przewiń Długie Tytuły",
@@ -76,11 +76,11 @@
         "SCREENSAVER_TIMEOUT": "Limit Czasu Wygaszacza Ekranu",
         "HELP_SCREENSAVER_TIMEOUT": "Limit czasu (w minutach), zanim na ekranie pojawi się zegar lub pusty ekran.",
         "SHOW_CLOCK": "Pokaż Zegar",
-        "HELP_SHOW_CLOCK": "Wybierz, aby wyświetlić zegar. W przeciwnym razie ekran będzie pust.y",
+        "HELP_SHOW_CLOCK": "Wybierz, aby wyświetlić zegar. W przeciwnym razie ekran będzie pusty.",
         "CLOCK_COLOR": "Kolor Zegara",
         "HELP_CLOCK_COLOR": "Wybierz kolor zegara.",
         "CUSTOM_CLOCK_COLOR": "Dostosuj Kolor Zegara",
-        "HELP_CUSTOM_CLOCK_COLOR": "Dostosuj kolor (zdefiniuj w wartościach HEX).",
+        "HELP_CUSTOM_CLOCK_COLOR": "Dostosuj kolor zegara (zdefiniuj w wartościach HEX).",
         "CLOCK_24HR": "Zegar 24-godzinny",
         "HELP_CLOCK_24HR": "Pokaż Zegar 24-godzinny."
     },
@@ -96,7 +96,7 @@
     "DISPLAY": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia zaawansowane. Zmieniaj je tylko wtedy, gdy dokładnie wiesz, co robisz!",
         "UPDATE_CHANNEL": "Kanał Aktualizacji",
-        "HELP_UPDATE_CHANNEL": "Kanał, którego {{.constants.GLOBAL_PROD_NAME}} używa do aktualizacji. Domyślnym kanałem jest 'Stable'.",
+        "HELP_UPDATE_CHANNEL": "Kanał, którego {{.constants.GLOBAL_PROD_NAME}} używa do aktualizacji. Domyślnym kanałem jest kanał 'Stable'.",
         "AUTO_UPDATE": "Automatyczna Aktualizacja",
         "HELP_AUTO_UPDATE": "Włącz automatyczną aktualizację. To zadziała tylko wtedy, gdy włączony jest harmonogram ponownego uruchamiania {{.constants.GLOBAL_PROD_NAME}}.",
         "REBOOT_SCHEDULE": "Harmonogram Ponownego Uruchomienia",
