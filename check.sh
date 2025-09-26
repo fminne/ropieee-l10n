@@ -90,11 +90,19 @@ check_for_missing_keys()
          while read l
 	 do
             _debug "checking toplevel key $k, sublevel key $l"
-	    if [ $( cat $f | jq -r ".${k} | keys_unsorted[]" | grep -c $l ) -eq 0 ]
-	    then
+            sk=$( cat $f | jq -r ".${k} | .${l}" )
+            if [ "$sk" = "null" ]
+            then
                _warning "key $k, sublevel key $l not found in ${bold}$( basename $f )${normal}"
                _todo "$( basename $f)" $k "sublevel key $l missing"
-	    fi
+            else
+               # subkey exists, but make sure it's not empty
+               if [ -z "$sk" ]
+               then
+                  _warning "key $k, sublevel key $l found, but empty in ${bold}$( basename $f )${normal}"
+                  _todo "$( basename $f)" $k "sublevel key $l empty"
+               fi
+            fi
          done < <( cat en-US.json| jq -r ".${k} | keys_unsorted[]" )
       fi
    done < <( cat $MASTER | jq -r 'keys_unsorted[]' )
