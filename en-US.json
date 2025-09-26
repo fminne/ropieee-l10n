@@ -116,7 +116,7 @@
         "WOL_MACADDR_PLACEHOLDER": "Provide a valid MAC address, e.g. dc:a6:32:ae:8e:7f",
         "ALARM_CLOCK": "Alarm Clock",
         "HELP_ALARM_CLOCK": "TheAppgineer's Alarm Clock Extension makes it possible to set an alarm for a Roon zone.",
-        "TOUCHSCREEN_TYPE": "Alarm Clock",
+        "TOUCHSCREEN_TYPE": "Touchscreen Type",
         "HELP_TOUCHSCREEN_TYPE": "Which type of touchscreen is connected.",
         "BUTTON_SHUTDOWN": "Shutdown",
         "BUTTON_REBOOT": "Reboot",

@@ -116,7 +116,7 @@
         "WOL_MACADDR_PLACEHOLDER": "Geef een geldig MAC-adres op, bijvoorbeeld dc:a6:32:ae:8e:7f",
         "ALARM_CLOCK": "Wekker",
         "HELP_ALARM_CLOCK": "Met de Alarm Clock Extension van TheAppgineer kunt u een alarm instellen voor een Roon-zone.",
-        "TOUCHSCREEN_TYPE": "Wekker",
+        "TOUCHSCREEN_TYPE": "Touchscreen Type",
         "HELP_TOUCHSCREEN_TYPE": "Welk type touchscreen is aangesloten.",
         "BUTTON_SHUTDOWN": "Afsluiten",
         "BUTTON_REBOOT": "Opnieuw Opstarten",
