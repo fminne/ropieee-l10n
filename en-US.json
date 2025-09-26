@@ -150,5 +150,12 @@
         "LINE_1": "Your device is rebooting. This takes about a minute before the webpage is available again.",
         "LINE_2": "This page will automatically refresh when the device is up again.",
         "BUTTON_RELOAD": "Reload"
+    },
+    "DONATE": {
+        "INTRO_TEXT": "{{.constants.GLOBAL_PROD_NAME}} is purely a hobby project, and as such, I take care of the costs involved. Think of hosting costs, hardware, etc. That means that {{.constants.GLOBAL_PROD_NAME}} relies on donations to cover these costs.",
+        "OPTIONS_TEXT": "The following donation options exist:",
+        "APPRECIATION_TEXT": "Every donation is highly appreciated!",
+        "REGARDS_TEXT": "Warm regards,",
+        "BUTTON_HOME": "GO HOME"
     }
 }
