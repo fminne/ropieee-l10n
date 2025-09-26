@@ -150,5 +150,12 @@
         "LINE_1": "Twoje urządzenie uruchamia się ponownie. Zanim strona internetowa będzie ponownie dostępna, może minąć około minuty.",
         "LINE_2": "Strona zostanie automatycznie odświeżona, gdy urządzenie będzie ponownie dostępne.",
         "BUTTON_RELOAD": "Odśwież"
+    },
+        "DONATE": {
+        "INTRO_TEXT": "{{.constants.GLOBAL_PROD_NAME}} jest projektem czysto hobbystycznym i jako taki przejmuję związane z tym koszty. Pomyśl o kosztach hostingu, sprzęcie itp. To oznacza, że {{.constants.GLOBAL_PROD_NAME}} utrzymuje się z darowizn na pokrycie tych kosztów.",
+        "OPTIONS_TEXT": "Istnieją następujące opcje darowizny:",
+        "APPRECIATION_TEXT": "Każda darowizna jest bardzo ceniona!",
+        "REGARDS_TEXT": "Pozdrawiam serdecznie,",
+        "BUTTON_HOME": "POWRÓT"
     }
 }
