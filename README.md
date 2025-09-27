@@ -12,14 +12,31 @@ RoPieee is an image for the Raspberry Pi devices (3, 4 and 5 family) that is cap
 
 RoPieee's web interface supports multiple languages. This project contains the JSON files with 'all' text elements. The english translation (en-US) acts like 'master' file: it is both the default language and acts as fallback when a specific translation cannot be found. 
 
-## Change translations
+## How does it work?
 
-If you think that some existing translations can be improved, feel free to make a PR.
+A translation file has keys, subkeys and values. The keys are being used by the software to identify a specific text and should *not* be changed in any way.
+So for example, in this snippet:
+
+```
+"MENU": {
+        "SYSTEM": "System",
+```
+
+MENU is the key, SYSTEM is the subkey and "System" is the value (the actual text). So in this example, only the value "System" can be changed.
+
+When loading a page of RoPieee's webinterface the software will look up the text by using the key and subkey. If it can't find the text, it will fall back to its default (English from the en-US.json file).
+
+When texts are being added by the software (because of a new feature for example), the corresponding texts will be added to the master file. The [TODO](TODO.md) file will show what's missing (if any) in the other translation files.
 
 ## Add translation
 
-Adding a translation can be done by opening a PR and introducing a new language file. That's the simple explanation 😅 
+Adding a new translation can be done by opening a PR and introducing a new language file. That's the simple explanation 😅
 
-Obviously more needs to happen: the language files are shipped with the binary, so only an update to RoPieee itself can 'enable' the new language. Furthermore it needs be correct and complete before the PR is (potentially) accepted. There's a simple shell script, called `check.sh`, which you can run (on a Linux system) that checks the validity of the file and if it is complete.
+A PR can also be used to propose changes to already existing files.
+
+Before a PR is going to (potentially) accepted, make sure the file is a valid JSON file. And if you're running on Linux you can use a simple shell script, called `check.sh`, to check the validity and file contents.
+When everything looks good the PR might be accepted.
+
+The language files are shipped with the binary, so only an update to RoPieee itself can 'enable' a new language or publish changes.
 
 Finally there's the [TODO](TODO.md) file that shows (possible) remaining items to be translated per file.
