@@ -2,6 +2,10 @@
 
 The following (sub)keys are missing:
 
+| language | de-DE.json |
+| -------- | ------------------- |
+
+
 | language | nl-NL.json |
 | -------- | ------------------- |
 | DOWN | toplevel key missing |
@@ -10,6 +14,4 @@ The following (sub)keys are missing:
 
 | language | pl-PL.json |
 | -------- | ------------------- |
-| ADVANCED | sublevel key TOUCHSCREEN_TYPE empty |
-| DONATE | toplevel key missing |
 
