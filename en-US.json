@@ -157,5 +157,13 @@
         "APPRECIATION_TEXT": "Every donation is highly appreciated!",
         "REGARDS_TEXT": "Warm regards,",
         "BUTTON_HOME": "GO HOME"
+    },
+    "INIT": {
+        "WELCOME_TEXT": "Welcome to {{.constants.GLOBAL_PROD_NAME}}!",
+        "INITIALISING_TEXT": "Your device is initialising...",
+        "WAIT_TEXT": "It will be up and running in a moment, so please be patient...",
+        "WRAPPING_UP_TEXT": "Wrapping up installation... Please do not interrupt.",
+        "WRAPPING_UP_WAIT_TEXT": "This can take a few more minutes, but we are almost there. During this step the device might reboot a few times.",
+        "DONATE_TEXT": "I hope you enjoy this product. <a href='https://ropieee.org/donate'>Donations</a> are welcome 😉"
     }
 }
