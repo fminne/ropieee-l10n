@@ -48,7 +48,7 @@
         "HELP_SWITCH_WIRELESS": "Wybierz, aby włączyć WiFi.",
         "TAB_WIRED": "LAN",
         "TAB_WIRELESS": "WiFi",
-        "WIRED_CONFIG_METHOD": "Metoda Konfiguracji",
+        "WIRED_CONFIG_METHOD": "Metoda Konfiguracji IP",
         "HELP_WIRED_CONFIG_METHOD": "Wybierz metodę konfiguracji adresu IP.",
         "BUTTON_MORE_INFO": "Więcej",
         "WIRELESS_EXT_ANTENNA": "Włącz Zewnętrzną Antenę WiFi",
@@ -111,7 +111,7 @@
         "HELP_LED_FUNCTION": "Jak chcesz, żeby zachowywały się diody LED. W Raspberry Pi5 dioda POWER jest całkowicie wyłączona.",
         "SEND_WOL": "Wyślij Funkcję Wake-on-Lan (WoL)",
         "HELP_SEND_WOL": "Wyślij wiadomość WoL podczas uruchamiania.",
-        "WOL_MACADDR": "Docelowy Adres MAC.",
+        "WOL_MACADDR": "Docelowy Adres MAC",
         "HELP_WOL_MACADDR": "Adres MAC, na który kierowany jest WoL.",
         "WOL_MACADDR_PLACEHOLDER": "Podaj prawidłowy adres MAC, np. dc:a6:32:ae:8e:7f",
         "ALARM_CLOCK": "Budzik",
@@ -139,11 +139,11 @@
     },
     "DEVICES": {
         "INTRO_TEXT": "Sekcja pokazuje wszystkie wykryte urządzenia {{.constants.GLOBAL_PROD_NAME}} w twojej sieci.",
-        "TABLE_HDR_NAME": "Nazwa Urządzenia",
+        "TABLE_HDR_NAME": "Urządzenia",
         "TABLE_HDR_ADDR": "Adres IP",
         "TABLE_HDR_TEMP": "Temperatura",
         "TABLE_HDR_UPTIME": "Czas Pracy",
-        "TABLE_HDR_VERSION": "Wersja Oprogramowania",
+        "TABLE_HDR_VERSION": "Oprogramowanie",
         "TABLE_HOST_ME": "JA"
     },
     "DOWN": {
