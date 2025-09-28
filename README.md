@@ -24,6 +24,14 @@ So for example, in this snippet:
 
 MENU is the key, SYSTEM is the subkey and "System" is the value (the actual text). So in this example, only the value "System" can be changed.
 
+In some strings you will see something like this:
+
+```
+Welcome to {{.constants.GLOBAL_PROD_NAME}}
+```
+
+The text between double brackets (```{{..}}```) refers to a variable that the software will inject during displaying. Do *not* change these in any way.
+
 When loading a page of RoPieee's webinterface the software will look up the text by using the key and subkey. If it can't find the text, it will fall back to its default (English from the en-US.json file).
 
 When texts are being added by the software (because of a new feature for example), the corresponding texts will be added to the master file. The [TODO](TODO.md) file will show what's missing (if any) in the other translation files.
