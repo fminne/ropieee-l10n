@@ -10,7 +10,7 @@
         "DISPLAY": "Wyświetlacz",
         "REMOTE": "Pilot",
         "ADVANCED": "Zaawansowane",
-        "SERVICES": "Usługi",
+        "SERVICES": "Serwisy",
         "INFORMATION": "Informacje",
         "DEVICES": "Urządzenia"
     },
@@ -157,5 +157,20 @@
         "APPRECIATION_TEXT": "Każda darowizna jest bardzo ceniona!",
         "REGARDS_TEXT": "Pozdrawiam serdecznie,",
         "BUTTON_HOME": "POWRÓT"
+     },       
+        "INIT": {
+        "WELCOME": "Witam w {{.constants.GLOBAL_PROD_NAME}}!",
+        "INITIALISING": "Twoje urządzenie uruchamia się...",
+        "WAIT": "Za chwilę wszystko będzie gotowe, więc prosimy o cierpliwość...",
+        "WRAPPING_UP_1": "Trwa instalacja... Proszę jej nie przerywać.",
+        "WRAPPING_UP_2": "Może to zająć jeszcze kilka minut, ale już prawie jesteśmy na miejscu. Na tym etapie urządzenie może kilka razy uruchomić się ponownie.",
+        "DONATE_1": "Mam nadzieję, że spodoba ci się {{.constants.GLOBAL_PROD_NAME}}.",
+        "DONATE_2": "są mile widziane 😉"
+    },
+    "UPDATE": {
+        "IN_PROGRESS": "Aktualizacja w toku...",
+        "WAIT_1": "Twoje {{.constants.GLOBAL_PROD_NAME}} jest aktualizowane",
+        "WAIT_2": "To może chwilę potrwać...",
+        "DONT_INTERRUPT": "Proszę nie przerywać i nie wyłączać urządzenia."
     }
 }
