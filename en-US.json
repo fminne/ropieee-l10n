@@ -164,7 +164,8 @@
         "WAIT": "It will be up and running in a moment, so please be patient...",
         "WRAPPING_UP_1": "Wrapping up installation... Please do not interrupt.",
         "WRAPPING_UP_2": "This can take a few more minutes, but we are almost there. During this step the device might reboot a few times.",
-        "DONATE": "I hope you enjoy this product. <a href='https://ropieee.org/donate'>Donations</a> are welcome 😉"
+        "DONATE_1": "I hope you enjoy this product.",
+        "DONATE_2": "are welcome 😉"
     },
     "UPDATE": {
         "IN_PROGRESS": "Update in progress...",
