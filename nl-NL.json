@@ -145,5 +145,32 @@
         "TABLE_HDR_UPTIME": "Bedrijfstijd",
         "TABLE_HDR_VERSION": "Versie",
         "TABLE_HOST_ME": "IKZELF"
+    },
+    "DOWN": {
+        "LINE_1": "Uw apparaat wordt opnieuw opgestart. Het duurt ongeveer een minuut voordat de webpagina weer beschikbaar is.",
+        "LINE_2": "Deze pagina wordt automatisch vernieuwd wanneer het apparaat weer beschikbaar is.",
+        "BUTTON_RELOAD": "Opnieuw laden"
+    },
+    "DONATE": {
+        "INTRO_TEXT": "{{.constants.GLOBAL_PROD_NAME}} is puur een hobbyproject en als zodanig draag ik zelf de kosten. Denk aan hostingkosten, hardware, enz. Dat betekent dat {{.constants.GLOBAL_PROD_NAME}} afhankelijk is van donaties om deze kosten te dekken.",
+        "OPTIONS_TEXT": "De volgende donatieopties zijn beschikbaar:",
+        "APPRECIATION_TEXT": "Elke donatie wordt enorm gewaardeerd!",
+        "REGARDS_TEXT": "Hartelijk dank,",
+        "BUTTON_HOME": "TERUG NAAR BEGINSCHERM"
+    },
+    "INIT": {
+        "WELCOME": "Welkom bij {{.constants.GLOBAL_PROD_NAME}}!",
+        "INITIALISING": "Uw apparaat wordt geÃ¯nitialiseerd...",
+        "WAIT": "Het is zo klaar, dus even geduld a.u.b....",
+        "WRAPPING_UP_1": "Installatie wordt afgerond... Gelieve niet te onderbreken.",
+        "WRAPPING_UP_2": "Dit kan nog enkele minuten duren, maar we zijn er bijna. Tijdens deze stap kan het apparaat een paar keer opnieuw opstarten.",
+        "DONATE_1": "Ik hoop dat u veel plezier beleeft aan dit product.",
+        "DONATE_2": "zijn welkom ðŸ˜‰"
+    },
+    "UPDATE": {
+        "IN_PROGRESS": "Update bezig...",
+        "WAIT_1": "Uw {{.constants.GLOBAL_PROD_NAME}} wordt bijgewerkt naar",
+        "WAIT_2": "Dit kan even duren....",
+        "DONT_INTERRUPT": "Gelieve niet te onderbreken of uit te schakelen."
     }
 }
