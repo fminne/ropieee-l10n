@@ -40,15 +40,15 @@
         "USB_FORCE_VOLUME_LEVEL": "Poziom Głośności USB",
         "HELP_USB_FORCE_VOLUME_LEVEL": "Poziom głośności wyjścia USB (%) podczas startu urządzenia.",
         "USB_AUTO_SUSPEND": "Automatyczne Uśpienie USB",
-        "HELP_USB_AUTO_SUSPEND": "Włącz automatyczne uśpienie wyjścia USB. Nie każdy DAC obsługuje tę funkcję. Bądź ostrożny używając tę funkcję!"
+        "HELP_USB_AUTO_SUSPEND": "Włącz automatyczne uśpienie wyjścia USB. Nie każdy DAC obsługuje tę funkcję. Bądź ostrożny podczas jej używania!"
     },
     "NETWORK": {
         "INTRO_TEXT": "Sekcja zawiera ustawienia sieciowe dla {{.constants.GLOBAL_PROD_NAME}}.",
         "SWITCH_WIRELESS": "Włącz WiFi",
-        "HELP_SWITCH_WIRELESS": "Wybierz, aby włączyć WiFi.",
+        "HELP_SWITCH_WIRELESS": "Wybierz, aby włączyć połączenie WiFi.",
         "TAB_WIRED": "LAN",
         "TAB_WIRELESS": "WiFi",
-        "WIRED_CONFIG_METHOD": "Metoda Konfiguracji IP",
+        "WIRED_CONFIG_METHOD": "Konfiguracja IP",
         "HELP_WIRED_CONFIG_METHOD": "Wybierz metodę konfiguracji adresu IP.",
         "BUTTON_MORE_INFO": "Więcej",
         "WIRELESS_EXT_ANTENNA": "Włącz Zewnętrzną Antenę WiFi",
@@ -88,13 +88,13 @@
         "INTRO_TEXT": "W tej sekcji znajdują się ustawienia pilota zdalnego sterowania. Model pilota zostanie wykryty automatycznie.",
         "TYPE": "Model Pilota",
         "ROON_ZONE": "Strefa Roon",
-        "HELP_ROON_ZONE": "Którą strefą Roon powinien sterować za pomocą pilota. Upewnij się, że wpisałeś dokładnie taką, jak w ustawieniach Roon.",
+        "HELP_ROON_ZONE": "Którą strefą Roon powinien sterować za pomocą pilota. Upewnij się, że wpisałeś dokładnie taką samą nazwę strefy jak w ustawieniach Roon.",
         "FOLLOW_ZONE": "Strefa Wyświetlacza",
-        "HELP_FOLLOW_ZONE": "Wybierz opcję, aby ustawić taką samą strefę jak w wyświetlaczu.",
-        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w Roon!"
+        "HELP_FOLLOW_ZONE": "Wybierz tę opcję, aby ustawić taką samą strefę jak w wyświetlaczu.",
+        "WARNING_EXTENSION": "Upewnij się, że włączyłeś i sparowałeś rozszerzenie RoPieee w ustawieniach rozszerzeń Roon!"
     },
     "ADVANCED": {
-        "INTRO_TEXT": "Sekcja zawiera ustawienia zaawansowane. Zmieniaj je tylko wtedy, gdy dokładnie wiesz, co robisz!",
+        "INTRO_TEXT": "Sekcja zawiera ustawienia zaawansowane. Zmieniaj je tylko wtedy, gdy dokładnie wiesz co robisz!",
         "UPDATE_CHANNEL": "Kanał Aktualizacji",
         "HELP_UPDATE_CHANNEL": "Kanał, którego {{.constants.GLOBAL_PROD_NAME}} używa do aktualizacji. Domyślnym kanałem jest kanał 'Stable'.",
         "AUTO_UPDATE": "Automatyczna Aktualizacja",
@@ -104,7 +104,7 @@
         "REBOOT_TIME": "Godzina Automatycznego Uruchomienia",
         "HELP_REBOOT_TIME": "O której godzinie {{.constants.GLOBAL_PROD_NAME}} ma uruchomić się ponownie?",
         "WEB_AUTH": "Hasło Administratora",
-        "HELP_WEB_AUTH": "Włącz logowanie do {{.constants.GLOBAL_PROD_NAME}} za pomocą hasła.",
+        "HELP_WEB_AUTH": "Włącz logowanie do GUI {{.constants.GLOBAL_PROD_NAME}} za pomocą hasła.",
         "WEB_PASSWORD": "Hasło",
         "HELP_WEB_PASSWORD": "Hasło do logowania się do {{.constants.GLOBAL_PROD_NAME}}.",
         "LED_FUNCTION": "Diody LED",
