@@ -18,6 +18,4 @@ The following (sub)keys are missing:
 
 | language | pl-PL.json |
 | -------- | ------------------- |
-| INIT | toplevel key missing |
-| UPDATE | toplevel key missing |
 
