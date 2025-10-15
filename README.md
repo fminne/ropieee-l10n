@@ -45,6 +45,11 @@ A PR can also be used to propose changes to already existing files.
 Before a PR is going to (potentially) accepted, make sure the file is a valid JSON file. And if you're running on Linux you can use a simple shell script, called `check.sh`, to check the validity and file contents.
 When everything looks good the PR might be accepted.
 
+To summarize, keep this in mind when contributing:
+- only one language (change) per PR
+- make sure the JSON file is valid
+- make sure you don't introduce unknown keys
+
 The language files are shipped with the binary, so only an update to RoPieee itself can 'enable' a new language or publish changes.
 
 Finally there's the [TODO](TODO.md) file that shows (possible) remaining items to be translated per file.
