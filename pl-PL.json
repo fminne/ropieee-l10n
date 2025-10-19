@@ -171,6 +171,6 @@
         "IN_PROGRESS": "Aktualizacja w toku...",
         "WAIT_1": "Twoje {{.constants.GLOBAL_PROD_NAME}} jest aktualizowane",
         "WAIT_2": "To może chwilę potrwać...",
-        "DONT_INTERRUPT": "Proszę nie przerywać i nie wyłączać urządzenia."
+        "DONT_INTERRUPT": "Proszę nie przerywaj aktualizacji i nie wyłączaj urządzenia."
     }
 }
