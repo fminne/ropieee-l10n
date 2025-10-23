@@ -36,9 +36,9 @@
     "USB": "Audio-USB",
     "HELP_USB": "Wählen Sie diese Option, um USB-Audio zu aktivieren. Dies kann parallel zu einem Audio-HAT verwendet werden.",
     "USB_FORCE_VOLUME": "USB-Lautstärke Erzwingen",
-    "HELP_USB_FORCE_VOLUME": "Wählen Sie diese Option, um die USB-Lautstärke beim Start zu erzwingen.",
+    "HELP_USB_FORCE_VOLUME": "",
     "USB_FORCE_VOLUME_LEVEL": "Lautstärke-Level Erzwingen",
-    "HELP_USB_FORCE_VOLUME_LEVEL": "USB-Lautstärke (%) beim Start.",
+    "HELP_USB_FORCE_VOLUME_LEVEL": "",
     "USB_AUTO_SUSPEND": "USB Auto-Suspend",
     "HELP_USB_AUTO_SUSPEND": "Aktivieren Sie USB Auto-Suspend. Nicht alle DACs unterstützen dies, seien Sie vorsichtig!"
   },

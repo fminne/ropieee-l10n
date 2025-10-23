@@ -36,9 +36,9 @@
         "USB": "Audio USB",
         "HELP_USB": "Select to enable USB audio. This can be used in parallel with an Audio HAT.",
         "USB_FORCE_VOLUME": "USB Force Volume",
-        "HELP_USB_FORCE_VOLUME": "Select to force USB volume level on startup.",
+        "HELP_USB_FORCE_VOLUME": "Select to force USB volume level on connect.",
         "USB_FORCE_VOLUME_LEVEL": "Force Volume Level",
-        "HELP_USB_FORCE_VOLUME_LEVEL": "USB volume level (%) on startup.",
+        "HELP_USB_FORCE_VOLUME_LEVEL": "USB volume level (%) on connect.",
         "USB_AUTO_SUSPEND": "USB Auto Suspend",
         "HELP_USB_AUTO_SUSPEND": "Enable USB auto suspend. Not all DAC's support this, so be careful!"
     },
