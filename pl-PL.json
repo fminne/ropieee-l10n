@@ -36,9 +36,9 @@
         "USB": "Audio USB",
         "HELP_USB": "Wybierz, aby włączyć dźwięk przez USB. Opcja działa równolegle z nakładką HAT.",
         "USB_FORCE_VOLUME": "Wymuś Głośność USB",
-        "HELP_USB_FORCE_VOLUME": "",
+        "HELP_USB_FORCE_VOLUME": "Wybierz, aby wymusić poziom głośności wyjścia USB po podłączeniu.",
         "USB_FORCE_VOLUME_LEVEL": "Poziom Głośności USB",
-        "HELP_USB_FORCE_VOLUME_LEVEL": "",
+        "HELP_USB_FORCE_VOLUME_LEVEL": "Poziom głośności wyjścia USB (%) po podłączeniu.",
         "USB_AUTO_SUSPEND": "Automatyczne Uśpienie USB",
         "HELP_USB_AUTO_SUSPEND": "Włącz automatyczne uśpienie wyjścia USB. Nie każdy DAC obsługuje tę funkcję. Bądź ostrożny podczas jej używania!"
     },
