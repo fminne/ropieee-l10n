@@ -64,6 +64,7 @@ is_valid_json_file()
 check_for_missing_keys()
 {
    local f=$1
+   local issues=0
 
    if [ ! -r $f ]
    then
@@ -85,6 +86,7 @@ check_for_missing_keys()
       then
          _warning "toplevel key $k not found in ${bold}$( basename $f )${normal}"
 	 _todo "$( basename $f)" $k "toplevel key missing"
+	 ((issues = issues + 1))
       else
          # the toplevel key exists, now let's check the subkeys
          while read l
@@ -95,12 +97,14 @@ check_for_missing_keys()
             then
                _warning "key $k, sublevel key $l not found in ${bold}$( basename $f )${normal}"
                _todo "$( basename $f)" $k "sublevel key $l missing"
+	       ((issues = issues + 1))
             else
                # subkey exists, but make sure it's not empty
                if [ -z "$sk" ]
                then
                   _warning "key $k, sublevel key $l found, but empty in ${bold}$( basename $f )${normal}"
                   _todo "$( basename $f)" $k "sublevel key $l empty"
+	          ((issues = issues + 1))
                fi
             fi
          done < <( cat en-US.json| jq -r ".${k} | keys_unsorted[]" )
@@ -132,6 +136,8 @@ check_for_missing_keys()
 	 done
       fi
    done
+
+   return $issues
 }
 
 ########################################################################################################################
@@ -148,14 +154,19 @@ fi
 if [ $TODO -eq 1 ]
 then
    todo_file=$tmpdir/todo.md
-   echo "## TODO missing (sub)keys"            >> $todo_file
-   echo                                        >> $todo_file
-   echo "The following (sub)keys are missing:" >> $todo_file
+   echo "## TODO missing (sub)keys"                >> $todo_file
+   echo                                            >> $todo_file
+   echo "> [!WARNING]"                             >> $todo_file
+   echo "> This file is generated, do *not* edit!" >> $todo_file
+   echo                                            >> $todo_file
+   echo                                            >> $todo_file
+   echo "The following (sub)keys are missing:"     >> $todo_file
 fi
 
 # iterate over all files (except master)
 for file in $( ls ./*.json | grep -v $MASTER )
 do
+   echo
    echo "found language file: ${bold}$( basename $file )${normal}"
    if [ $TODO -eq 1 ]
    then
@@ -165,6 +176,14 @@ do
    fi
 
    check_for_missing_keys $file
+   nr=$?
+
+   if [ $nr -eq 0 ]
+   then
+      echo "no issues found!"
+      echo "no issues found!" >> $todo_file
+   fi
+
    if [ $TODO -eq 1 ]
    then
       echo >> $todo_file
