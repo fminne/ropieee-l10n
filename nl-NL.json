@@ -65,6 +65,8 @@
         "INTRO_TEXT": "Dit gedeelte bevat de instellingen voor het Raspberry Pi-touchscreen.",
         "ORIENTATION": "Oriëntatie",
         "HELP_ORIENTATION": "Als het touchscreen ondersteboven staat, draai het dan met deze optie.",
+        "ORIENTATION_NORMAL": "Normaal",
+        "ORIENTATION_FLIPPED": "Ondersteboven",
         "ROON_DEFAULT_ZONE": "Standaard Roon Zone",
         "HELP_ROON_DEFAULT_ZONE": "Welke Roon Zone moet standaard op het scherm worden weergegeven. Zorg ervoor dat u deze *precies* zo typt als in Roon. U kunt de zone ook rechtstreeks vanaf het scherm wijzigen.",
         "SCROLL_TITLES": "Scroll lange titels",
