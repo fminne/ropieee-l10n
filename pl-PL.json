@@ -65,6 +65,8 @@
         "INTRO_TEXT": "Sekcja zawiera ustawienia dotykowego wyświetlacza Raspberry Pi.",
         "ORIENTATION": "Orientacja",
         "HELP_ORIENTATION": "Jeśli ekran dotykowy jest odwrócony do góry nogami, obróć go za pomocą tej funkcji.",
+        "ORIENTATION_NORMAL": "Normalna",
+        "ORIENTATION_FLIPPED": "Odwrócona", 
         "ROON_DEFAULT_ZONE": "Domyślna Strefa Roon",
         "HELP_ROON_DEFAULT_ZONE": "Którą strefę Roon powinien domyślnie pokazywać wyświetlacz. Upewnij się, że wpisałeś właściwą strefę jak w ustawieniach Roon. Strefę możesz zmienić także bezpośrednio z ekranu.",
         "SCROLL_TITLES": "Przewiń Długie Tytuły",
