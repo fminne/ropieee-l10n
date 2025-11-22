@@ -23,6 +23,5 @@ no issues found!
 
 | language | pl-PL.json |
 | -------- | ------------------- |
-| DISPLAY | sublevel key ORIENTATION_NORMAL missing |
-| DISPLAY | sublevel key ORIENTATION_FLIPPED missing |
+no issues found!
 
